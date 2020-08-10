@@ -1,65 +1,140 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html>
-    <head> <!-- в голову можно записівать дополнительніе скрипті -->
-        <title> test </title>
+    <head>
+        <meta charset="UTF-B">
+        <meta name="viewport" content="width=device-width">
+        <title> HomeWork_HTML_Lesson_1</title>
     </head>
-        <body>
+    <body>
+        <p>-------------------------</p>
         
-            <p color="white">TEXT</p>                      <!-- єто параграф <p></p> -->
-            <h1> test </h1> 
-            <h2 align = "right"> test </h2> 
-            <h3> text </h3>                 <!-- Pзаголовок  H1 -найбидьший тидьки один раз H6 останний тег - може бути скильки хочеш-->
-            <h4 align = "right"> test </h4> 
-            <h5> test </h5> 
-            <h6 align = "right"> test </h6> 
-            <a> google </a>                  <!-- ссілка гипер посилання. єто просто текст. В тега <a> саме головне це посилання-->
-            <a href = "#"> google </a> - в майбутньому може бути ссилка на ДЖАВА СКРИПТ
-            <a href = "https://www.google.com/"> google </a> <!-- може бути и просто IP адрессу  -->
-            <table border="1px" bgcolor="green" color="white">   <!-- атрибути --> 
-                
-                <tr>
-                    <td>1</td> <!-- <th> ЖИРНІЕ </th> -->
-                    <td>11</td>
-                    <td>12</td>
-                    <td>13</td>
-                </tr>
-                
-                <tr>
-                    <td>2</td>
-                    <td>21</td>
-                    <td>22</td>
-                    <td>23</td>
-                </tr>
-                
-                <tr>
-                    <td>3</td>
-                    <td>31</td>
-                    <td>32</td>
-                    <td>33</td>
-                </tr>
-            </table> <!-- таблиці <tr> - СТОЛБЦИ -->
-            
-            <ul> <!-- список-->
-                <li>1</li> 
-                <li>2</li>
-                <li>3</li><!--єлемент спискак-->
-            </ul>
-            
-            <ol>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-            </ol>
-            
-            <ul> <!-- список-->
-                <li><a href ="#">Home</a> </li>
-                <li><a href ="/about.html">About</a></li>
-                <li><a href ="/contact.html">Contact</a></li> <!--єлемент спискак-->
-            </ul>
-               
-        </body>
-    
+        <p>СОЗДАЕМ АКТИВНЫЕ ССЫЛКИ</p>
+        <h2>HOME</h2>
+        
+        <header>
+            <nav>
+                <ul>
+            <li><a href="../../../../../../../../../../index.html">Home</a></li>
+            <li><a href="/../about.html">About</a></li>
+            <li><a href="/../contacts.html">Contacts</a></li>
+                </ul>   
+            </nav>
+        </header>
+        
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        
+        
+        <p>-------------------------</p>
+        <p> p и /p - это параграф. Вывод текста с новой строки</p>
+        <p>-------------------------</p>
+        <p>h1, h2, h3, h4, h5, h6 - это ЗАГОЛОВК.
+            h1 - самый крупный и может использоватsся только 1 раз, ф h6 - самый мелкий. h2-h6 может использоватся несколько раз.</p>
+        <h1>1</h1>
+        <h2>2</h2>
+        <h3>3</h3>
+        <h4>4</h4>
+        <h5>5</h5> s
+        <h6>6 </h6>
+        <p>-------------------------</p>
+        <p>a - это ссылка. ПРИМЕРЫ:</p>
+        <a>link</a> - Это просто ссылка, НЕ активная НЕ кликабельная <p></p>
+        <a href = "#">link without PATH</a> - это активная ссылка, НО " href = "#" " - дает возможность временно оставить ссылку БЕЗ дальнейшего пути <p></p>
+        <a href = "https://www.google.com">link with the PATH</a> - если "#" заменить на путь то ссылка будет перенаправлять по адресу ( "https://www.google.com" - для примера)<p></p>
+        <p>-------------------------</p>
+         <h3>table </h3> -
+        это тег для создания таблиц. 
+        <p><img src = "src/img/table_synt.png"> <p>Синтаксис таблиц</p>
+        <p></p>
+        
+        <p>th - делает жирний шривт</p>
+         
+        <table border="10px">
+            <tr>
+                <th> (4*4) </th>
+                <th> (4*4) </th>
+                <th> (4*4) </th>
+                <th> (4*4) </th>
+            </tr>
+             <tr>
+                <td> (4*4) </td>
+                <td> (4*4) </td>
+                <td> (4*4) </td>
+                <td> (4*4) </td>
+            </tr>
+             <tr>
+                <td> (4*4) </td>
+                <td> (4*4) </td>
+                <td> (4*4) </td>
+                <td> (4*4) </td>
+            </tr>
+             <tr>
+                <td> (4*4) </td>
+                <td> (4*4) </td>
+                <td> (4*4) </td>
+                <td> (4*4) </td>
+            </tr>
+        </table>
+        <p>-------------------------</p>
+        <p> тег (ul) - формирует список (НЕНУМЕРИРОВАНЫЙ)</p>
+        <p> тег (li) - формирует ЭЛЕМЕНТ списока. li идет в середину ul</p>
+            <p>Пример:</p>
+        <ul>
+            <li>a</li>
+            <li>b</li>
+            <li>c</li>
+        </ul>
+        <p>Тег (ol) - формирует список (НУМЕРИРОВАНЫЙ)</p>
+        <p> тег (li) - формирует ЭЛЕМЕНТ списока. li идет в середину ol</p>
+         <p>Пример:</p>
+        <ol>
+            <li>1</li>
+            <li>2</li>
+            <li>2</li>
+        </ol>
+        <p>-------------------------</p>
+        <p>ВЫВОДИМ ВИДЕО</p>
+        <video controls autoplay loop muted poster="pages/src/img/table_synt.png">
+        <source src+"" type+"">
+        <source src+"" type+"">
+        </video>
+        <p>-------------------------</p>
+        <p>Тег аудио АНАЛОГИЧНО КАК И ВИДЕО</p>
+        <audio> <source>
+        </audio>
+        <p>-------------------------</p>
+        <img src="https://cdn.spacetelescope.org/archives/images/wallpaper2/heic2007a.jpg" width="400" height="300" alt="KArambola">
+        <p>-------------------------</p>
+        <p> Это блок - очень популярен. див занимает сто процентов экрана по дефолту</p>
+        <div> hello</div>
+        <p>-------------------------</p>
+        <p>спан занимает только необходимое место</p>
+        <span>Span</span>
+        <p>-------------------------</p>
+        <p></p>
+        <header></header>
+        <footer></footer>
+        <section></section>
+        <nav></nav>
+        <p>-------------------------</p>
+        <p> Hello you are potato</p>
+        <p> Hello you are <br> potato</p>
+        <p> Hello <b>you</b> are potato</p>
+        <p> Hello <strong>you</strong> are potato</p>
+        <p> Hello <i>you</i> are potato</p>
+        <p> Hello <sub>you</sub> are potato</p>
+        <p> Hello <sup>you</sup> are potato</p>
+        <p>-------------------------</p>
+        <p>ССЫЛКА НА РЕСУРС</p>
+        <iframe src+"<iframe width="560" height="315" src="https://www.youtube.com/embed/GyjM02_S4C4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>"></iframe>
+       <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2673.0887691440203!2d33.4165507!3d47.9346666!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40db207a6dc63859%3A0x1d9675efa6e32487!2zU2Fsc2EgSW1wdWxzIERhbmNlIENsdWIg0KHQsNC70YzRgdCwLCDQkdCw0YfQsNGC0LAsINCa0LjQt9C-0LzQsdCwLCDQoNC10LPQs9C10YLQvtC9!5e0!3m2!1sru!2sua!4v1596737618217!5m2!1sru!2sua" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        
+        
+        
+        
 
-
-</html>                                       <!-- двухстрочній комментарий должет біть закріт-->
-
+    </body>
+</html>
