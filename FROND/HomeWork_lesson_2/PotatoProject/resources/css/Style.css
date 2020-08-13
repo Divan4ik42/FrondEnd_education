@@ -99,11 +99,13 @@ h1 {
     margin-top: 50px; 
      border-bottom: 2px;
     border border-color: rgb(160, 113, 55);
+    
 
 }
 .main-nav li{
     display: inline-block;
     margin-right: 30px; 
+    
    
 }
 .main-nav li a:link,
@@ -114,11 +116,16 @@ h1 {
     font-size: 70%;
     margin-bottom: 5px;
     border: 2px solid transperent;
+    
+    
 }
 .main-nav li a:hover,
 .main-nav li a:active{
     padding-bottom: 4px;
     border-bottom: 2px solid rgb(143, 101, 49);
+    transition: background-color 0.2s, color 0.2s, border 0.2s;
+    
+    
 }
 header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0)), url(img/main-BG.jpg);
@@ -133,4 +140,12 @@ header {
     top: 30%;
     left: 50%;
     transform: translate(-50%,-50%); 
+}
+.main-table {
+    border: 10px solid rgb(160, 113, 55);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%)
+    
 }
