@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Light'), local('Roboto-Light'), url('sorce/fonts/Robotolight.woff2') format('woff2'), url('sorce/fonts/Robotolight.woff') format('woff'), url('sorce/fonts/Robotolight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Medium'), local('Roboto-Medium'), url('sorce/fonts/Robotomedium.woff2') format('woff2'), url('sorce/fonts/Robotomedium.woff') format('woff'), url('sorce/fonts/Robotomedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Bold'), local('Roboto-Bold'), url('sorce/fonts/Robotobold.woff2') format('woff2'), url('sorce/fonts/Robotobold.woff') format('woff'), url('sorce/fonts/Robotobold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Bold Italic'), local('Roboto-BoldItalic'), url('sorce/fonts/Robotobolditalic.woff2') format('woff2'), url('sorce/fonts/Robotobolditalic.woff') format('woff'), url('sorce/fonts/Robotobolditalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}

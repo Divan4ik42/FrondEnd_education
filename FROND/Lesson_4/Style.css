@@ -17,7 +17,7 @@ header {
 }
 
 .logo {
-    /*width: 35%;
+    width: 35%;
 }
 
 .menu {
@@ -27,7 +27,7 @@ header {
 }
 
 .header-botton {
-    width: 30%;*/
+    width: 30%;
 }
 
 /*.logo,.header-botton,.menu{
@@ -43,7 +43,11 @@ header {
     display: flex;
     flex-wrap: wrap;
     /* 35 35 30 - будет в одной линии / 35 35 31 - кинет последний на следующюю строку*/
-    justify-content: space-around;
+    /*justify-content: space-around;*/
+    justify-content: ;
+    align-items: f
+        
 }
 
 }
+ju

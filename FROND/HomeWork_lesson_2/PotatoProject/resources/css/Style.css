@@ -26,8 +26,11 @@ html {
     max-width: 1140px;
     margin: 0 auto;
 }
-.center {
-   text-align: center;
+/*.center {
+    display: inline-block;
+    width="30%";
+    height: ="auto";
+    text-align: center;*/
 }
 img.center{
     display: block;
@@ -194,4 +197,12 @@ header {
 .section-features{
     width: 80%;
     margin: 0 auto;
+}
+.item-check {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 70%;
+    padding-bottom: 4px;
+    
 }
