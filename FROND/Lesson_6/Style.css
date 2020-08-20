@@ -1,0 +1,121 @@
+
+*{
+    margin: 0;
+    padding: 0;
+     font-family: 'Roboto', sans-serif; /* '' нужно если шрифт из 2-х слов */
+        font-weight: 300;
+}
+
+body {
+    background: rgba(185, 5, 5, 0.67);
+}
+
+.container {
+    max-width: calc(1200px + 30px);
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+    /* padding не вілезет за границк 1200px (часто используется для трабл шутинга когда какой то єлемент падает вниз) */
+}
+
+.comment {
+    resize: none;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.51);
+    padding: 15px 0;
+    position: fixed; /* фиксирует єлемент при скроле*/
+    width: 100%;  
+    TOP: 0;
+    left: 0;
+
+}
+
+.logo,
+.menu,
+.header-botton {
+    /*це наши жаби*/
+    display: inline-block;
+}
+
+.logo img {
+    max-width: 300px;
+
+}
+
+.menu li {
+    display: inline-block;
+    list-style: none;
+    /*justify-content: center;*/
+    align-content: center;
+    margin: 0 15px;
+    
+    
+
+}
+.menu li a{   /*li > a только для а*/
+    color:#ffffff;
+    text-decoration: none;
+    transition-duration: 0.5s;
+    font-weight: 300;
+     border: 1px solid transparent ;
+    padding: 2px 3px;
+     
+ 
+}
+.menu li a:hover,.menu li a.active{
+    opacity: 0.7;
+    transition-duration: 0.5s;
+    border-color: #fff; 
+   
+}
+.header-botton  {
+    text-decoration: none;
+    color: #ffffff;
+}
+.header-botton a{
+    border: 1px solid #fff;
+    padding: 10 15;
+    border-radius: 4px;
+    font-weight: 500;
+    
+}.header-botton a:hover{
+    border-color: #000;
+    background: #000;
+    
+}
+
+/*.logo,.header-botton,.menu{
+    display: inline-block;
+}*/
+/*.logo,.header-botton,.menu{
+    float: left;
+}*/
+/*.header {
+    display: flex;
+}*/
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    /* 35 35 30 - будет в одной линии / 35 35 31 - кинет последний на следующюю строку*/
+    /*justify-content: space-around;*/
+    justify-content: space-between;
+    align-items: center /*  протестить on off*/
+
+}
+.active{
+    
+}
+
+::selection{
+    background: #000;
+    color: #fff;
+}
+
+::-moz-selection{
+    background: #000;
+    color: #fff;
+}
+
+/* до нашого продукту додати меню */

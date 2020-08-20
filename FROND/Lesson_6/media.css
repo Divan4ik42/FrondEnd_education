@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.products-items {
+    padding: 100px 0;
+    flex-wrap: wrap;
+    display: flex;
+/*    justify-content: space-between;*/
+}
+
+/*
+.box {
+    width: 300px;
+    height: 200px;
+    border: 1px solid #000;
+    background-color: #000;
+    
+    flex-wrap: wrap;
+    display: flex;
+    justify-content:center;
+    align-content: center;
+
+}
+
+.product-item {
+    color: #fff;
+    width: 30%;
+    text-align: center;
+    
+
+
+}
+*/
+.box {
+    width: 30%;
+    height: 200px;
+/*   margin:   20px;     получится неоптимизировано */
+    margin-bottom: 50px;
+    background-color: #000;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content:center;
+    align-content: center;
+    margin-right: 3%;
+    border-radius: 100% 0 100% 0;
+    transition-duration:0.5s;
+
+}
+.box:hover,
+.box:active{
+/*    transform:scale(1.2);*/
+    transition-duration:0.5s;
+    border-radius:0 100% 0 100%;
+
+}
+
+.product-item {
+    color: #fff;
+    width: 30%;
+    text-align: center;
+
+}
+.box:nth-child(3n){ /* помогает контролировать каждій 3й єлемент */
+   margin-right: 0 ;
+    
+}
+/* от широкого к узкому - ПЕРЕЗАПИСІВАТЬ ПРЕДІДУЩИЙ*/
+
+@media(max-width: 1199px){
+    .box{
+    width: 31.2%;
+        margin-right: 3%;
+    }
+}
+    
+@media(max-width: 992px){
+     .box {
+    width: 49%;
+    }
+     .box:nth-child(2n) {
+         margin-right: 0;
+ 
+    }
+
+         .box:nth-child(3n),.box {
+         margin-right:2%;
+ 
+    }
+}
+}@media(max-width: 767px){
+    width:100%;
+    
+}
