@@ -1,3 +1,5 @@
+/* b9eafc   */
+
 /*---------------------------*/
 /*базовые*/
 /*---------------------------*/
@@ -9,8 +11,31 @@
     box-sizing: border-box;
 }
 
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url(img/main-BG-1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    /* 100% of viewport*/
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.75);
+
+
+
+}
+
+
 
 html {
+
     background-color: #fff;
     color: #585858;
     font-family: 'Montserrat', 'Arial', sans-serif;
@@ -19,23 +44,7 @@ html {
     text-rendering: optimizeLegibility;
 }
 
-/*---------------------------*/
-/*многоразовые*/
-/*---------------------------*/
-.row {
-    max-width: 1140px;
-    margin: 0 auto;
-}
-
-.center {
-    text-align: center;
-}
-
-img.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto
-}
+body {}
 
 /*-----------заглавные----------------*/
 h1,
@@ -74,6 +83,76 @@ h2:after {
     margin: 0 auto;
     margin-top: 30px;
     width: 200px;
+}
+
+/*---------------------------*/
+/*многоразовые*/
+/*---------------------------*/
+
+.colums-4,
+.sale-flex,
+.sale-tablet {
+    display: flex;
+    flex-wrap: wrap;
+    /* 35 35 30 - будет в одной линии / 35 35 31 - кинет последний на следующюю строку*/
+    justify-content: space-around;
+}
+
+.sale-flex {
+    justify-content: space-between;
+    padding-top: 200px;
+}
+
+.sale-flex a {
+    text-decoration: none;
+}
+
+.sale-tablet {
+    width: 30%;
+    flex-direction: column;
+    align-content: center;
+
+
+
+}
+
+.sale-tablet img:hover {
+    transform: scale(1.05)
+}
+
+}
+
+.sale-tablet a {
+    
+    text-align: center;
+}
+
+
+
+.img-size-1 {
+
+    border-radius: 100px;
+    width: 200px;
+    height: 200px;
+}
+
+.sale-flex {}
+
+.row,
+.sale-flex {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.center {
+    text-align: center;
+
+}
+
+img.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
 }
 
 /*-----------КНОПКИ---------------*/
@@ -124,21 +203,21 @@ h2:after {
 /*---------------------------*/
 /*шапка*/
 /*---------------------------*/
+
+
 .logo {
-    width: 100px;
+    width: 50px;
     height: auto;
     float: left;
-    margin-top: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 
 }
 
 .main-nav {
     float: right;
     list-style: none;
-    margin-top: 50px;
-    border-bottom: 2px;
-    border border-color: rgb(160, 113, 55);
-
+    margin-top: 25px;
 
 }
 
@@ -149,37 +228,36 @@ h2:after {
 
 }
 
+.main-nav li a {
+    color: #b9eafc;
+    border-color: transparent;
+
+
+
+}
+
 .main-nav li a:link,
 .main-nav li a:visited {
-    color: #fff;
+
     text-decoration: none;
     text-transform: uppercase;
     font-size: 70%;
-    padding-bottom: 4px;
-    border-bottom: 2px solid rgb(123, 125, 125);
-    transition: border-bottom 0.3s;
+    padding-bottom: 5px;
 
 
 }
 
 .main-nav li a:hover,
 .main-nav li a:active {
-    padding-bottom: 4px;
+
     border-bottom: 2px solid rgb(143, 101, 49);
-
-
-
+    transition-duration: 0.3s;
+    transform: scale(1.5)
 }
 
-header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url(img/main-BG.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    /* 100% of viewport*/
-}
 
 .main-text-box {
+
 
     position: absolute;
     width: 1140px;
@@ -205,14 +283,55 @@ header {
     width: 23%;
 }
 
-.colums-4 {
-    display: flex;
-    flex-wrap: wrap;
-    /* 35 35 30 - будет в одной линии / 35 35 31 - кинет последний на следующюю строку*/
-    justify-content: space-around;
-}
+
 
 .section-features {
     width: 80%;
     margin: 0 auto;
+    padding-top: 30px;
+}
+
+
+.item-check {
+    color: #b9eafc;
+    text-transform: uppercase;
+    font-size: 70%;
+    padding: 20px 0px;
+    text-align: center;
+
+
+
+}
+
+.item-check:hover,
+.item-check:active{
+    /*
+    
+    text-transform: uppercase;
+    font-size: 70%;
+    padding: 20px 0px;
+    text-align: center;*/
+    color: #ff0000;
+    border: 1 solid #ff0000;
+    transform: scale(1.5);
+    content: "rad";
+    
+    
+
+
+
+}
+
+.text-box p {
+    line-height: 150%;
+    font-size: 80%;
+
+}
+
+.icon-big {
+
+    font-size: 400%;
+    color: rgb(160, 113, 55);
+    margin-bottom: 30px;
+    display: block;
 }
